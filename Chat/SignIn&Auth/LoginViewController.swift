@@ -31,16 +31,20 @@ class LoginViewController: UIViewController {
         button.titleLabel?.font = .avenir20()
         return button
     }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupConstraints()
+        goggleButton.customizeGoogleButton()
     }
 }
 //MARK: - Setup Constraints
 
 
 extension LoginViewController{
+    
+    
     private func setupConstraints() {
         let loginWithView = ButtonFromView(label: loginWithLabel, button: goggleButton)
         let emailStackView = UIStackView(arrangedSubviews: [emailLabel, emailTextField], axis: .vertical, spacing: 0)
