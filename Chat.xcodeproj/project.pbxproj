@@ -29,6 +29,7 @@
 		2022D2862653FA6800857591 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2022D2852653FA6800857591 /* GradientView.swift */; };
 		2052FB552654074400DBCA20 /* WaitingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052FB542654074400DBCA20 /* WaitingChatCell.swift */; };
 		2052FB5826540A1E00DBCA20 /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052FB5726540A1E00DBCA20 /* SelfConfiguringCell.swift */; };
+		2052FB5D2654102500DBCA20 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052FB5C2654102500DBCA20 /* SectionHeader.swift */; };
 		20CA2F89264AC78D00D29A22 /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2F88264AC78D00D29A22 /* SetupProfileViewController.swift */; };
 		20CA2F8C264ACAF800D29A22 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2F8B264ACAF800D29A22 /* AddPhotoView.swift */; };
 		20CA2F90264BBFB000D29A22 /* SegmentedControll+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2F8F264BBFB000D29A22 /* SegmentedControll+ext.swift */; };
@@ -62,6 +63,7 @@
 		2022D2852653FA6800857591 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		2052FB542654074400DBCA20 /* WaitingChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatCell.swift; sourceTree = "<group>"; };
 		2052FB5726540A1E00DBCA20 /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
+		2052FB5C2654102500DBCA20 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		20CA2F88264AC78D00D29A22 /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
 		20CA2F8B264ACAF800D29A22 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
 		20CA2F8F264BBFB000D29A22 /* SegmentedControll+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentedControll+ext.swift"; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				2022D280264EA40000857591 /* Cell */,
 				20CA2F9C264BCB4D00D29A22 /* MainTabBarController.swift */,
 				20CA2F93264BC78C00D29A22 /* ListViewController.swift */,
+				2052FB5C2654102500DBCA20 /* SectionHeader.swift */,
 				20CA2FA0264BCBC300D29A22 /* PeopleViewController.swift */,
 			);
 			path = Controllers;
@@ -254,6 +257,7 @@
 			files = (
 				20CA2F94264BC78C00D29A22 /* ListViewController.swift in Sources */,
 				200BDC1B264AA84300CABD52 /* OneLineTextField.swift in Sources */,
+				2052FB5D2654102500DBCA20 /* SectionHeader.swift in Sources */,
 				2022D2862653FA6800857591 /* GradientView.swift in Sources */,
 				20CA2F9D264BCB4D00D29A22 /* MainTabBarController.swift in Sources */,
 				200BDC18264A9D3F00CABD52 /* SignUpViewController.swift in Sources */,
