@@ -35,6 +35,7 @@
 		2052FB6626541DD900DBCA20 /* MChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052FB6526541DD900DBCA20 /* MChat.swift */; };
 		2052FB6C2655176700DBCA20 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052FB6B2655176700DBCA20 /* UserCell.swift */; };
 		2052FB6F2655261400DBCA20 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052FB6E2655261400DBCA20 /* UIViewController.swift */; };
+		2090B9ED26558CE900D9FF50 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090B9EC26558CE900D9FF50 /* ProfileViewController.swift */; };
 		20CA2F89264AC78D00D29A22 /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2F88264AC78D00D29A22 /* SetupProfileViewController.swift */; };
 		20CA2F8C264ACAF800D29A22 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2F8B264ACAF800D29A22 /* AddPhotoView.swift */; };
 		20CA2F90264BBFB000D29A22 /* SegmentedControll+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2F8F264BBFB000D29A22 /* SegmentedControll+ext.swift */; };
@@ -74,6 +75,7 @@
 		2052FB6526541DD900DBCA20 /* MChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChat.swift; sourceTree = "<group>"; };
 		2052FB6B2655176700DBCA20 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		2052FB6E2655261400DBCA20 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		2090B9EC26558CE900D9FF50 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		20CA2F88264AC78D00D29A22 /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
 		20CA2F8B264ACAF800D29A22 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
 		20CA2F8F264BBFB000D29A22 /* SegmentedControll+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentedControll+ext.swift"; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				20CA2F93264BC78C00D29A22 /* ListViewController.swift */,
 				2052FB5C2654102500DBCA20 /* SectionHeader.swift */,
 				20CA2FA0264BCBC300D29A22 /* PeopleViewController.swift */,
+				2090B9EC26558CE900D9FF50 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				2022D282264EA42100857591 /* ActiveChatCell.swift in Sources */,
 				200BDC0B264A8CCA00CABD52 /* UIImageView+ext.swift in Sources */,
 				20CA2FA1264BCBC300D29A22 /* PeopleViewController.swift in Sources */,
+				2090B9ED26558CE900D9FF50 /* ProfileViewController.swift in Sources */,
 				200BDBEA264A6C5300CABD52 /* AuthViewController.swift in Sources */,
 				2022D27E264BFD3800857591 /* Bundle-Decodable.swift in Sources */,
 				20CA2F89264AC78D00D29A22 /* SetupProfileViewController.swift in Sources */,
