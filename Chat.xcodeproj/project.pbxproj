@@ -44,6 +44,7 @@
 		20CA2F94264BC78C00D29A22 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2F93264BC78C00D29A22 /* ListViewController.swift */; };
 		20CA2F9D264BCB4D00D29A22 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2F9C264BCB4D00D29A22 /* MainTabBarController.swift */; };
 		20CA2FA1264BCBC300D29A22 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2FA0264BCBC300D29A22 /* PeopleViewController.swift */; };
+		20F21BF52655B05A0059F0D1 /* ChatRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F21BF42655B05A0059F0D1 /* ChatRequestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		20CA2F93264BC78C00D29A22 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		20CA2F9C264BCB4D00D29A22 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		20CA2FA0264BCBC300D29A22 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		20F21BF42655B05A0059F0D1 /* ChatRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRequestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 				2052FB5C2654102500DBCA20 /* SectionHeader.swift */,
 				20CA2FA0264BCBC300D29A22 /* PeopleViewController.swift */,
 				2090B9EC26558CE900D9FF50 /* ProfileViewController.swift */,
+				20F21BF42655B05A0059F0D1 /* ChatRequestViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				200BDC0B264A8CCA00CABD52 /* UIImageView+ext.swift in Sources */,
 				20CA2FA1264BCBC300D29A22 /* PeopleViewController.swift in Sources */,
 				2090B9ED26558CE900D9FF50 /* ProfileViewController.swift in Sources */,
+				20F21BF52655B05A0059F0D1 /* ChatRequestViewController.swift in Sources */,
 				200BDBEA264A6C5300CABD52 /* AuthViewController.swift in Sources */,
 				2022D27E264BFD3800857591 /* Bundle-Decodable.swift in Sources */,
 				20CA2F89264AC78D00D29A22 /* SetupProfileViewController.swift in Sources */,
