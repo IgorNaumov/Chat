@@ -36,6 +36,8 @@
 		2052FB6C2655176700DBCA20 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052FB6B2655176700DBCA20 /* UserCell.swift */; };
 		2052FB6F2655261400DBCA20 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052FB6E2655261400DBCA20 /* UIViewController.swift */; };
 		2090B9ED26558CE900D9FF50 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090B9EC26558CE900D9FF50 /* ProfileViewController.swift */; };
+		2090B9F02655973800D9FF50 /* InsertableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090B9EF2655973800D9FF50 /* InsertableTextField.swift */; };
+		2090B9F326559ED700D9FF50 /* UIView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090B9F226559ED700D9FF50 /* UIView+ext.swift */; };
 		20CA2F89264AC78D00D29A22 /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2F88264AC78D00D29A22 /* SetupProfileViewController.swift */; };
 		20CA2F8C264ACAF800D29A22 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2F8B264ACAF800D29A22 /* AddPhotoView.swift */; };
 		20CA2F90264BBFB000D29A22 /* SegmentedControll+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2F8F264BBFB000D29A22 /* SegmentedControll+ext.swift */; };
@@ -76,6 +78,8 @@
 		2052FB6B2655176700DBCA20 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		2052FB6E2655261400DBCA20 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		2090B9EC26558CE900D9FF50 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2090B9EF2655973800D9FF50 /* InsertableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertableTextField.swift; sourceTree = "<group>"; };
+		2090B9F226559ED700D9FF50 /* UIView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ext.swift"; sourceTree = "<group>"; };
 		20CA2F88264AC78D00D29A22 /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
 		20CA2F8B264ACAF800D29A22 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
 		20CA2F8F264BBFB000D29A22 /* SegmentedControll+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentedControll+ext.swift"; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				200BDBFD264A7F9700CABD52 /* UIButton+ext.swift */,
+				2090B9F226559ED700D9FF50 /* UIView+ext.swift */,
 				200BDC07264A8BB000CABD52 /* Label+ext.swift */,
 				200BDC0A264A8CCA00CABD52 /* UIImageView+ext.swift */,
 				200BDC03264A874000CABD52 /* UIColor+ext.swift */,
@@ -155,6 +160,7 @@
 				2022D2852653FA6800857591 /* GradientView.swift */,
 				2022D27D264BFD3800857591 /* Bundle-Decodable.swift */,
 				200BDC0D264A8DF300CABD52 /* UIKit */,
+				2090B9EF2655973800D9FF50 /* InsertableTextField.swift */,
 			);
 			path = Extantion;
 			sourceTree = "<group>";
@@ -282,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2090B9F326559ED700D9FF50 /* UIView+ext.swift in Sources */,
 				2052FB6626541DD900DBCA20 /* MChat.swift in Sources */,
 				20CA2F94264BC78C00D29A22 /* ListViewController.swift in Sources */,
 				200BDC1B264AA84300CABD52 /* OneLineTextField.swift in Sources */,
@@ -292,6 +299,7 @@
 				2052FB6F2655261400DBCA20 /* UIViewController.swift in Sources */,
 				2052FB6326541CB300DBCA20 /* MUser.swift in Sources */,
 				2022D282264EA42100857591 /* ActiveChatCell.swift in Sources */,
+				2090B9F02655973800D9FF50 /* InsertableTextField.swift in Sources */,
 				200BDC0B264A8CCA00CABD52 /* UIImageView+ext.swift in Sources */,
 				20CA2FA1264BCBC300D29A22 /* PeopleViewController.swift in Sources */,
 				2090B9ED26558CE900D9FF50 /* ProfileViewController.swift in Sources */,
