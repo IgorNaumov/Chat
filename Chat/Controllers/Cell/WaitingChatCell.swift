@@ -20,13 +20,15 @@ class WaitingChatCell: UICollectionViewCell , SelfConfiguringCell{
         self.clipsToBounds = true
         setupConnstraints()
     }
-    func configure(with value: Mchat) {
-        friendImageView.image = UIImage(named: value.userImageString)
-        
+    func configure<U>(with value: U) where U : Hashable {
+        guard let chat: Mchat = value as? Mchat else { return }
+        friendImageView.image = UIImage(named: chat.userImageString)
     }
+   
     private func setupConnstraints(){
         friendImageView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(friendImageView)
+        
         NSLayoutConstraint.activate([
             friendImageView.topAnchor.constraint(equalTo: self.topAnchor),
             friendImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor),

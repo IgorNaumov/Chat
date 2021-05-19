@@ -11,9 +11,10 @@ import UIKit
 
 
 class ActiveChatCell: UICollectionViewCell, SelfConfiguringCell {
+    
     static var reuseId: String = "ActiveChatCell"
     
-   let friendImageView = UIImageView()
+    let friendImageView = UIImageView()
     let friendName = UILabel(text: "User name", font: .laoSangamMN20())
     let lastMessage = UILabel(text: "How are you", font: .laoSangamMN18())
     let gradientView = GradientView(from: .topTrailing, to: .bottomLeading, startColor: #colorLiteral(red: 0.7882352941, green: 0.631372549, blue: 0.9411764706, alpha: 1), endColor: #colorLiteral(red: 0.4784313725, green: 0.6980392157, blue: 0.9215686275, alpha: 1))
@@ -27,12 +28,14 @@ class ActiveChatCell: UICollectionViewCell, SelfConfiguringCell {
         self.clipsToBounds = true
     }
     
-    
-    func configure(with value: Mchat) {
-        friendImageView.image = UIImage(named: value.userImageString)
-        friendName.text = value.username
-        lastMessage.text = value.lastMessage
+    func configure<U>(with value: U) where U : Hashable {
+        guard let chat: Mchat = value as? Mchat else { return }
+        
+        friendImageView.image = UIImage(named: chat.userImageString)
+        friendName.text = chat.username
+        lastMessage.text = chat.lastMessage
     }
+    
     
     
     
@@ -72,7 +75,7 @@ extension ActiveChatCell {
             lastMessage.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -14),
             lastMessage.leadingAnchor.constraint(equalTo: friendImageView.trailingAnchor, constant: 16),
             friendName.trailingAnchor.constraint(equalTo: gradientView.leadingAnchor, constant: 16)
-         
+            
         ])
         NSLayoutConstraint.activate([
             gradientView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
@@ -80,7 +83,7 @@ extension ActiveChatCell {
             gradientView.heightAnchor.constraint(equalToConstant: 78),
             gradientView.widthAnchor.constraint(equalToConstant: 8)
         ])
-
+        
     }
 }
 //MARK: - SWIFT UI

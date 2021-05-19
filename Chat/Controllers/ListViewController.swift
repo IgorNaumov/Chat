@@ -14,6 +14,7 @@ class ListViewController: UIViewController {
     
     let activeChats = Bundle.main.decode([Mchat].self, from: "activeChats.json")
     let waitingChats = Bundle.main.decode([Mchat].self, from: "waitingChats.json")
+    
     enum Section: Int, CaseIterable {
         case waitingChats, activeChats
         
@@ -28,17 +29,15 @@ class ListViewController: UIViewController {
         }
     }
     var dataSourse: UICollectionViewDiffableDataSource<Section, Mchat>?
-    
     var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setupSearchBar()
         setupCollectionView()
         createDataSource()
         reloadData()
-        
-        
     }
     
     private func setupSearchBar() {
@@ -78,13 +77,10 @@ class ListViewController: UIViewController {
 }
 //MARK: - Data Source
 extension ListViewController{
-    private func configure<T: SelfConfiguringCell>(cellType: T.Type, with value: Mchat, for indexPath: IndexPath) -> T {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellType.reuseId, for: indexPath) as? T else {fatalError("Unable to dequeue \(cellType)") }
-        cell.configure(with: value)
-        return cell
-    }
+   
     
     private func createDataSource() {
+        
         dataSourse = UICollectionViewDiffableDataSource<Section, Mchat>(collectionView: collectionView, cellProvider: { (collectionView, indexPath, chat) -> UICollectionViewCell? in
             guard let section = Section(rawValue: indexPath.section) else {
                 fatalError("Noooo")
@@ -93,10 +89,10 @@ extension ListViewController{
             
             case .waitingChats:
                 
-                return self.configure(cellType: WaitingChatCell.self, with: chat, for: indexPath)
+                return self.configure(collectionView: collectionView, cellType: WaitingChatCell.self, with: chat, for: indexPath)
                 
             case .activeChats:
-                return self.configure(cellType: ActiveChatCell.self, with: chat, for: indexPath)
+                return self.configure(collectionView: collectionView, cellType: ActiveChatCell.self, with: chat, for: indexPath)
                 
             
             }

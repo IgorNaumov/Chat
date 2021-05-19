@@ -33,6 +33,8 @@
 		2052FB6026541C2D00DBCA20 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 2052FB5F26541C2D00DBCA20 /* users.json */; };
 		2052FB6326541CB300DBCA20 /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052FB6226541CB300DBCA20 /* MUser.swift */; };
 		2052FB6626541DD900DBCA20 /* MChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052FB6526541DD900DBCA20 /* MChat.swift */; };
+		2052FB6C2655176700DBCA20 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052FB6B2655176700DBCA20 /* UserCell.swift */; };
+		2052FB6F2655261400DBCA20 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052FB6E2655261400DBCA20 /* UIViewController.swift */; };
 		20CA2F89264AC78D00D29A22 /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2F88264AC78D00D29A22 /* SetupProfileViewController.swift */; };
 		20CA2F8C264ACAF800D29A22 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2F8B264ACAF800D29A22 /* AddPhotoView.swift */; };
 		20CA2F90264BBFB000D29A22 /* SegmentedControll+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2F8F264BBFB000D29A22 /* SegmentedControll+ext.swift */; };
@@ -70,6 +72,8 @@
 		2052FB5F26541C2D00DBCA20 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		2052FB6226541CB300DBCA20 /* MUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
 		2052FB6526541DD900DBCA20 /* MChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChat.swift; sourceTree = "<group>"; };
+		2052FB6B2655176700DBCA20 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		2052FB6E2655261400DBCA20 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		20CA2F88264AC78D00D29A22 /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
 		20CA2F8B264ACAF800D29A22 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
 		20CA2F8F264BBFB000D29A22 /* SegmentedControll+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentedControll+ext.swift"; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 				2022D277264BFD0D00857591 /* activeChats.json */,
 				2052FB5F26541C2D00DBCA20 /* users.json */,
 				2022D27A264BFD1800857591 /* waitingChats.json */,
+				2052FB6E2655261400DBCA20 /* UIViewController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 			children = (
 				2022D281264EA42100857591 /* ActiveChatCell.swift */,
 				2052FB542654074400DBCA20 /* WaitingChatCell.swift */,
+				2052FB6B2655176700DBCA20 /* UserCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -280,6 +286,7 @@
 				2022D2862653FA6800857591 /* GradientView.swift in Sources */,
 				20CA2F9D264BCB4D00D29A22 /* MainTabBarController.swift in Sources */,
 				200BDC18264A9D3F00CABD52 /* SignUpViewController.swift in Sources */,
+				2052FB6F2655261400DBCA20 /* UIViewController.swift in Sources */,
 				2052FB6326541CB300DBCA20 /* MUser.swift in Sources */,
 				2022D282264EA42100857591 /* ActiveChatCell.swift in Sources */,
 				200BDC0B264A8CCA00CABD52 /* UIImageView+ext.swift in Sources */,
@@ -293,6 +300,7 @@
 				200BDC11264A90EE00CABD52 /* ButtonFromView.swift in Sources */,
 				200BDBE8264A6C5300CABD52 /* SceneDelegate.swift in Sources */,
 				200BDBFE264A7F9700CABD52 /* UIButton+ext.swift in Sources */,
+				2052FB6C2655176700DBCA20 /* UserCell.swift in Sources */,
 				2052FB5826540A1E00DBCA20 /* SelfConfiguringCell.swift in Sources */,
 				2052FB552654074400DBCA20 /* WaitingChatCell.swift in Sources */,
 				20CA2F90264BBFB000D29A22 /* SegmentedControll+ext.swift in Sources */,

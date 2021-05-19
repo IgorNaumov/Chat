@@ -19,7 +19,7 @@ class PeopleViewController: UIViewController {
             switch self {
             
             case .users:
-                <#code#>
+                return "\(usersCount) people nearby"
             }
         }
     }
@@ -29,7 +29,7 @@ class PeopleViewController: UIViewController {
         setupSearchBar()
         setupCollectionView()
         createDataSource()
-        reloadData()
+        reloadData(with: nil)
         
     }
     private func setupCollectionView(){
@@ -40,7 +40,7 @@ class PeopleViewController: UIViewController {
         
         collectionView.register(SectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SectionHeader.reuseId)
         
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellid")
+        collectionView.register(UserCell.self, forCellWithReuseIdentifier: UserCell.reuseId)
        
         
     }
@@ -57,15 +57,20 @@ class PeopleViewController: UIViewController {
         searchController.searchBar.delegate = self
     }
     
-    private func reloadData() {
+    private func reloadData(with searchText: String?) {
+        
+        let filtered = users.filter{ (user) -> Bool in
+            user.contains(filter: searchText)
+        }
         var snapshot = NSDiffableDataSourceSnapshot<Section, MUser>()
         snapshot.appendSections([.users])
-        snapshot.appendItems(users, toSection: .users)
+        snapshot.appendItems(filtered, toSection: .users)
 
         dataSource?.apply(snapshot, animatingDifferences: true)
     }
 }
 extension PeopleViewController {
+    
     private func createDataSource() {
         dataSource = UICollectionViewDiffableDataSource<Section,MUser>(collectionView: collectionView, cellProvider: { (collectionView, indexPath, user ) ->
             UICollectionViewCell? in
@@ -75,17 +80,18 @@ extension PeopleViewController {
             switch section {
             
             case .users:
-                let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "cellid", for: indexPath)
-                cell.backgroundColor = .blue
-                return cell
+
+                return self.configure(collectionView: collectionView, cellType: UserCell.self, with: user, for: indexPath)
             }
         })
-        dataSourse?.supplementaryViewProvider = {
+        
+        dataSource?.supplementaryViewProvider = {
             collectionView, kind, indexPath in
             guard let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: SectionHeader.reuseId, for: indexPath) as? SectionHeader else {fatalError("Canntot create section") }
             
             guard let section = Section(rawValue: indexPath.section) else { fatalError("Uknow section kind") }
-            sectionHeader.configure(text: section.description(), font: .laoSangamMN20(), textColor: #colorLiteral(red: 0.5725490196, green: 0.5725490196, blue: 0.5725490196, alpha: 1))
+            let items = self.dataSource.snapshot().itemIdentifiers(inSection: .users)
+            sectionHeader.configure(text: section.description(usersCount: items.count), font: .systemFont(ofSize: 36, weight: .light), textColor: .label )
             return sectionHeader
         }
     }
@@ -138,6 +144,7 @@ extension PeopleViewController {
 //MARK: - UISearchBarDelegate
 extension PeopleViewController: UISearchBarDelegate{
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        reloadData(with: searchText)
         print(searchText)
     }
     
