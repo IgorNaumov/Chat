@@ -30,6 +30,9 @@
 		2052FB552654074400DBCA20 /* WaitingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052FB542654074400DBCA20 /* WaitingChatCell.swift */; };
 		2052FB5826540A1E00DBCA20 /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052FB5726540A1E00DBCA20 /* SelfConfiguringCell.swift */; };
 		2052FB5D2654102500DBCA20 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052FB5C2654102500DBCA20 /* SectionHeader.swift */; };
+		2052FB6026541C2D00DBCA20 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 2052FB5F26541C2D00DBCA20 /* users.json */; };
+		2052FB6326541CB300DBCA20 /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052FB6226541CB300DBCA20 /* MUser.swift */; };
+		2052FB6626541DD900DBCA20 /* MChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052FB6526541DD900DBCA20 /* MChat.swift */; };
 		20CA2F89264AC78D00D29A22 /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2F88264AC78D00D29A22 /* SetupProfileViewController.swift */; };
 		20CA2F8C264ACAF800D29A22 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2F8B264ACAF800D29A22 /* AddPhotoView.swift */; };
 		20CA2F90264BBFB000D29A22 /* SegmentedControll+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2F8F264BBFB000D29A22 /* SegmentedControll+ext.swift */; };
@@ -64,6 +67,9 @@
 		2052FB542654074400DBCA20 /* WaitingChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatCell.swift; sourceTree = "<group>"; };
 		2052FB5726540A1E00DBCA20 /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
 		2052FB5C2654102500DBCA20 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		2052FB5F26541C2D00DBCA20 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		2052FB6226541CB300DBCA20 /* MUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
+		2052FB6526541DD900DBCA20 /* MChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChat.swift; sourceTree = "<group>"; };
 		20CA2F88264AC78D00D29A22 /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
 		20CA2F8B264ACAF800D29A22 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
 		20CA2F8F264BBFB000D29A22 /* SegmentedControll+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentedControll+ext.swift"; sourceTree = "<group>"; };
@@ -102,6 +108,7 @@
 		200BDBE4264A6C5300CABD52 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				2052FB6826542F2900DBCA20 /* Model */,
 				20CA2F9B264BCB0600D29A22 /* Controllers */,
 				20CA2F98264BCAC800D29A22 /* SignIn&Auth */,
 				200BDC0E264A8DFD00CABD52 /* Extantion */,
@@ -126,6 +133,7 @@
 				200BDC13264A99EF00CABD52 /* StackView+ext.swift */,
 				20CA2F8F264BBFB000D29A22 /* SegmentedControll+ext.swift */,
 				2022D277264BFD0D00857591 /* activeChats.json */,
+				2052FB5F26541C2D00DBCA20 /* users.json */,
 				2022D27A264BFD1800857591 /* waitingChats.json */,
 			);
 			path = UIKit;
@@ -159,6 +167,15 @@
 				2052FB5726540A1E00DBCA20 /* SelfConfiguringCell.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2052FB6826542F2900DBCA20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2052FB6226541CB300DBCA20 /* MUser.swift */,
+				2052FB6526541DD900DBCA20 /* MChat.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		20CA2F98264BCAC800D29A22 /* SignIn&Auth */ = {
@@ -241,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2052FB6026541C2D00DBCA20 /* users.json in Resources */,
 				200BDBF2264A6C5300CABD52 /* LaunchScreen.storyboard in Resources */,
 				2022D278264BFD0E00857591 /* activeChats.json in Resources */,
 				200BDBEF264A6C5300CABD52 /* Assets.xcassets in Resources */,
@@ -255,12 +273,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2052FB6626541DD900DBCA20 /* MChat.swift in Sources */,
 				20CA2F94264BC78C00D29A22 /* ListViewController.swift in Sources */,
 				200BDC1B264AA84300CABD52 /* OneLineTextField.swift in Sources */,
 				2052FB5D2654102500DBCA20 /* SectionHeader.swift in Sources */,
 				2022D2862653FA6800857591 /* GradientView.swift in Sources */,
 				20CA2F9D264BCB4D00D29A22 /* MainTabBarController.swift in Sources */,
 				200BDC18264A9D3F00CABD52 /* SignUpViewController.swift in Sources */,
+				2052FB6326541CB300DBCA20 /* MUser.swift in Sources */,
 				2022D282264EA42100857591 /* ActiveChatCell.swift in Sources */,
 				200BDC0B264A8CCA00CABD52 /* UIImageView+ext.swift in Sources */,
 				20CA2FA1264BCBC300D29A22 /* PeopleViewController.swift in Sources */,
